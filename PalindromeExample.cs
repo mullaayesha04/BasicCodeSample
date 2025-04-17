@@ -7,13 +7,15 @@ class StrPalindrome
 
     string reversedStr=new string(inputStr.Reverse().ToArray());
 
-    if(inputStr==reversedStr)
+    if(inputStr.Equals(reversedStr))
     {
-      
+      Console.WriteLine("String is Palindrome");
     }
     else
     {
-      
+      Console.WriteLine("String is NOT Palindrome");
     }
+
+    Console.WriteLine("Reversed String is:" + reversedStr);
   }
 }
